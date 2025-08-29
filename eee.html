@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EEE Question Papers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-y: scroll;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      padding: 8px 15px;
+      border: 2px solid black;
+      border-radius: 6px;
+      background: #f4f4f4;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #2c3e50;
+      color: white;
+      text-align: left;
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 28px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .hero-text p {
+      margin: 10px 0 20px;
+      font-size: 18px;
+    }
+
+    .hero img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* PDF Section */
+    .pdf-section {
+      padding: 40px;
+      background: #f9f9f9;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .pdf-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .pdf-box:hover {
+      transform: scale(1.05);
+    }
+
+    .pdf-box a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #2c3e50;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">PREVIOUS QUESTION PAPERS</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>ECET EXAMINATION PAPERS FOR EEE</h1>
+      <p>Electrical & Electronics Engineering Question Papers</p>
+    </div>
+    <!-- Replace this image with your CSE image -->
+    <img src="Untitled design (11).png" alt="EEE Image">
+  </section>
+
+  <!-- PDF Section -->
+  <section class="pdf-section">
+    <!-- Replace the href link with your PDF file path -->
+    <div class="pdf-box">
+      <a href="EEE_ECET_2025.pdf" target="_blank">EEE_ECET_2025</a>
+    </div>
+    <div class="pdf-box">
+      <a href="EEE_ECET_2024.pdf" target="_blank">EEE_ECET_2024</a>
+    </div>
+    <div class="pdf-box">
+      <a href="EEE_ECET_2023.pdf" target="_blank">EEE_ECET_2023</a>
+    </div>
+    <div class="pdf-box">
+      <a href="EEE_ECET_2022.pdf" target="_blank">EEE_ECET_2022</a>
+    </div>
+    <div class="pdf-box">
+      <a href="EEE_ECET_2021.pdf" target="_blank">EEE_ECET_2021</a>
+    </div>
+  </section>
+
+</body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const logoButton = document.querySelector(".logo");
+    if (logoButton) {
+      logoButton.style.cursor = "pointer"; // show hand cursor
+      logoButton.addEventListener("click", function() {
+        // Change "index.html" to the file you want to open
+        window.location.href = "project1.html";
+      });
+    }
+  });
+</script>

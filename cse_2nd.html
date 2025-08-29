@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Question Papers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-y: scroll;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      padding: 8px 15px;
+      border: 2px solid black;
+      border-radius: 6px;
+      background: #f4f4f4;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #2c3e50;
+      color: white;
+      text-align: left;
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 28px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .hero-text p {
+      margin: 10px 0 20px;
+      font-size: 18px;
+    }
+
+    .hero img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Buttons Section */
+    .pdf-section {
+      padding: 40px;
+      background: #f9f9f9;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .pdf-btn {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+      width: 100%;
+    }
+
+    .pdf-btn:hover {
+      transform: scale(1.05);
+      background: #1a242f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">PREVIOUS QUESTION PAPERS</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>C23 CSE 1ST YEAR DIPLOMA EXAMINATION PAPERS</h1>
+      <p>Computer Science Engineering Question Papers</p>
+    </div>
+    <!-- Replace this image with your CSE image -->
+    <img src="Untitled design (9).png" alt="CSE Image">
+  </section>
+
+  <!-- Buttons Section -->
+  <section class="pdf-section">
+    <button class="pdf-btn" onclick="window.location.href='CM-301_Mathmatics.html'">CM-301_Mathmatics</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-302_Digital_Ele.html'">CM-302_Digital_Ele</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-303_Operating_sys.html'">CM-303_Operating_sys</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-304_Data_Structures.html'">CM-304_Data_Structures</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-305_DBMS.html'">CM-305_DBMS</button>
+  </section>
+
+  <section class="pdf-section">
+    <button class="pdf-btn" onclick="window.location.href='CM-401_SE.html'">CM-401_SE</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-402_WT.html'">CM-402_WT</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-403_COMP.html'">CM-403_COMP</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-404_OOPS.html'">CM-404_OOPS</button>
+    <button class="pdf-btn" onclick="window.location.href='CM-405_CN&CS.html'">CM-405_CN&CS</button>
+  </section>
+</body>
+</html>
+
+<!-- Script block for logo -->
+<script>
+  // 🔹 Make the "PREVIOUS QUESTION PAPERS" header clickable
+  document.addEventListener("DOMContentLoaded", function() {
+    const logoButton = document.querySelector(".logo");
+    if (logoButton) {
+      logoButton.addEventListener("click", function() {
+        window.location.href = "project1.html"; 
+        // ⬆ Change this file name to the page you want
+      });
+    }
+  });
+</script>
