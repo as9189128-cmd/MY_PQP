@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: scroll;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 8px 15px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+/* Main Sections */
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.section:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.section img {
+  width: 70%;
+  max-width: 180px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.section h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 14px;
+  color: #555;
+}
+
+.section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN   */
+/* -------------------- */
+
+/* Tablets (below 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .sections {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 30px;
+  }
+}
+
+/* Mobile Devices (below 768px) */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .sections {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 25px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+  }
+
+  .section p {
+    font-size: 13px;
+  }
+}
+
+/* Small Phones (below 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .section img {
+    width: 80%;
+  }
+
+  .section h3 {
+    font-size: 16px;
+  }
+
+  .section p {
+    font-size: 12px;
+  }
+}
